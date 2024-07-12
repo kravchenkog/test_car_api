@@ -1,0 +1,28 @@
+{
+    "title": "Json schema for the jetta-endpoint /jetta-receiver endpoint",
+    "type": "object",
+    "properties": {
+      "car": {
+        "type": "object",
+        "properties": {
+          "make": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "make",
+          "model"
+        ]
+      },
+      "result": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "car",
+      "result"
+    ]
+  }
