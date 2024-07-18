@@ -23,7 +23,7 @@ class TestCheckJettaReceiverBehavior_JsonSchema:
             url="http://my-server.com:5002/jetta-receiver",
             json=body
         )
-        schema_path = os.path.join(self.app.api.path_to_schemas, "rotationByVoyage.json")
+        schema_path = os.path.join(self.api.jsv.path_to_schemas, "rotationByVoyage.json")
         assert self.api.jsv.is_response_valid(
             json_response=response,
             schema_path=os.path.join(self.api.jsv.root_path_schemas, "jetta_schema.json")
